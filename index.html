@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fox Tales Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background: #d2691e;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #8b4513;
+        }
+        a {
+            color: #b22222;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #d2691e;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        .hero-img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 0.5rem;
+            filter: sepia(1) hue-rotate(-10deg) saturate(3) brightness(0.9);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .sidebar-box {
+            background: #fff3e6;
+            border-left: 4px solid #d2691e;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\FireLily\Downloads\Simple Fox Blog\firelily-logo2.png" alt="Fox icon" class="hero-img">
+        <h1>Fox Tales Blog</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#posts">Posts</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#diet">Diet</a>
+            <a href="#myths">Myths</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About This Blog</h2>
+        <p>Welcome to Fox Tales! This blog explores the beauty, mystery, and habits of foxes around the world. Whether you're here for real-life info or folklore stories, there's something foxy for everyone.</p>
+    </section>
+
+    <section id="posts">
+        <h2>Latest Posts</h2>
+        <article>
+            <h3>The Clever Fox in Folklore</h3>
+            <p>Across cultures, foxes are often seen as clever, cunning creatures. In Japanese mythology, kitsune are magical foxes with the power to shapeshift and bring blessings or trickery.</p>
+        </article>
+        <article>
+            <h3>Red Fox Behaviour in the Wild</h3>
+            <p>Red foxes are incredibly adaptive animals. Learn about their habitats, hunting methods, and how they communicate with each other through vocalizations and tail movements.</p>
+        </article>
+    </section>
+
+    <section id="gallery">
+        <h2>Fox Photo Gallery</h2>
+        <div class="gallery">
+            <img src="C:\Users\FireLily\Downloads\Simple Fox Blog\fox-715588_1280.jpg" alt="Fox in snow">
+            <img src="C:\Users\FireLily\Downloads\Simple Fox Blog\fox-1842565_1280.jpg" alt="Red fox portrait">
+            <img src="C:\Users\FireLily\Downloads\Simple Fox Blog\fox-275961_1280.jpg" alt="Fox in grass">
+        </div>
+    </section>
+
+    <section id="diet">
+        <h2>What Do Foxes Eat?</h2>
+        <p>Foxes are omnivores. Their diet includes small mammals, birds, fruits, insects, and even eggs. Urban foxes may scavenge food scraps, but their natural preferences lie in the wild.</p>
+    </section>
+
+    <section id="myths">
+        <h2>Foxes in Myth and Legend</h2>
+        <p>From the trickster Reynard in Western European tales to the mystical kitsune in Japanese folklore, foxes have always sparked human imagination. Learn about their magical roles across cultures.</p>
+    </section>
+
+    <section id="facts">
+        <h2>Fun Fox Facts</h2>
+        <ul>
+          <li>Foxes have whiskers on their legs as well as their faces, helping them navigate in the dark.</li>
+          <li>They can run up to 30 miles per hour!</li>
+          <li>Foxes use 28 different vocalizations to communicate.</li>
+          <li>Each fox’s tail (called a "brush") is unique and helps with balance and warmth.</li>
+          <li>Arctic foxes change color with the seasons for camouflage.</li>
+        </ul>
+      </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have a fox story or question to share? Reach out at <a href="mailto:fulkersonkm54@gmail.com">fulkersonkm54@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fox Tales Blog</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
+
+</body>
+</html>
